@@ -56,11 +56,11 @@ Utilize o **yarn install** ou o **npm install** para instalar as dependências d
 Em seguida, inicie o projeto.
 
 ```cl
-yarn vite
+yarn dev ou yarn vite
 ```
 Para iniciar o projeto e torna-lo **acessível pelo celular** rode no terminal
 ```cl
-yarn vite --host
+yarn dev --host ou yarn vite --host
 ```
 Abra o projeto no navegador com a **url**
 ```cl
