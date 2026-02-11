@@ -3,7 +3,7 @@ import { useTheme } from "styled-components";
 import { darken, lighten } from "polished";
 
 function formateDate(payload: any) {
-  const dataBruta = payload[0].payload.fullDate; // Ex: '2026-02-14'
+  const dataBruta = payload[0].payload.fullDate;
     
     const [_ano, mes, dia] = dataBruta.split('-');
 
