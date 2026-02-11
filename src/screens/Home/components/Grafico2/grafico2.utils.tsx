@@ -93,6 +93,7 @@ export function transformToAreaChartData(cursos: CoursesMetricsProps[], dataAtua
 
     const pontoNoGrafico: any = {
       name: diaApenas,
+      fullDate: diaCompleto,
     };
 
     // Pra cada dia eu seto o total de cada curso
