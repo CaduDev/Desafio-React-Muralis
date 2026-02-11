@@ -1,0 +1,55 @@
+import type { CoursesMetricsProps } from '@/@types/graficos';
+
+export const coursesMetrics: CoursesMetricsProps[] = [
+  {
+    id: 'course_a',
+    label: 'Curso A',
+    color: '#ff9500',
+    incoming: [
+      { day: '2026-01-15', total: 10 },
+      { day: '2026-01-20', total: 10 },
+      { day: '2026-02-01', total: 5 },
+      { day: '2026-02-12', total: 10 },
+      { day: '2026-02-25', total: 11 },
+      { day: '2026-03-05', total: 8 },
+      { day: '2026-03-20', total: 10 },
+      { day: '2026-04-10', total: 15 },
+      { day: '2026-04-25', total: 10 },
+      { day: '2026-05-05', total: 15 },
+      { day: '2026-05-20', total: 20 },
+      { day: '2026-06-10', total: 10 },
+      { day: '2026-06-25', total: 15 },
+      { day: '2026-07-05', total: 18 },
+      { day: '2026-07-20', total: 18 },
+      { day: '2026-08-02', total: 13 },
+      { day: '2026-08-15', total: 13 },
+      { day: '2026-09-10', total: 15 },
+      { day: '2026-09-25', total: 16 },
+    ]
+  },
+  {
+    id: 'course_b',
+    label: 'Curso B',
+    color: '#1a3b5d',
+    incoming: [
+      { day: '2026-01-10', total: 18 },
+      { day: '2026-01-28', total: 20 },
+      { day: '2026-02-03', total: 13 },
+      { day: '2026-02-13', total: 15 },
+      { day: '2026-02-28', total: 15 },
+      { day: '2026-03-08', total: 12 },
+      { day: '2026-03-22', total: 20 },
+      { day: '2026-04-05', total: 5 },
+      { day: '2026-04-15', total: 10 },
+      { day: '2026-05-02', total: 10 },
+      { day: '2026-05-15', total: 20 },
+      { day: '2026-06-05', total: 10 },
+      { day: '2026-06-15', total: 10 },
+      { day: '2026-06-28', total: 26 },
+      { day: '2026-07-10', total: 10 },
+      { day: '2026-07-25', total: 10 },
+      { day: '2026-08-05', total: 10 },
+      { day: '2026-08-20', total: 10 },
+    ]
+  },
+];

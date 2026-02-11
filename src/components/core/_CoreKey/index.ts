@@ -1,0 +1,1 @@
+export const MENU_KEY = '@MURALIS_MENU_DASHBOARD';
