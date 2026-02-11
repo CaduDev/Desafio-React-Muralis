@@ -1,8 +1,9 @@
 import { useTheme } from 'styled-components';
 
-import { BsPersonCircle } from 'react-icons/bs';
-
 import { type AvatarSize } from '@/@types/avatar';
+
+import defaultPicLight from '@/assets/defaulPic_light.png';
+import defaultPicDark from '@/assets/defaultPic_dark.png';
 
 import { Container } from './styles';
 
@@ -14,7 +15,7 @@ export interface AvatarProps {
 }
 
 export function Avatar({ uri, size = 'md' }: AvatarProps) {
-  const { COLORS } = useTheme();
+  const { name } = useTheme();
 
   return (
     <Container $size={size} role="presentation">
@@ -26,12 +27,25 @@ export function Avatar({ uri, size = 'md' }: AvatarProps) {
           loading="lazy" 
           onError={(e) => e.currentTarget.style.display = 'none'}
         />
-      ) : (
-        <BsPersonCircle 
-          color={COLORS.PRIMARY_STRONG} 
-          aria-hidden="true" 
-        />
-      )}
+      ) : name === 'dark'
+        ? (
+          <img 
+            src={defaultPicDark} 
+            alt="" 
+            aria-hidden="true" 
+            loading="lazy" 
+            onError={(e) => e.currentTarget.style.display = 'none'}
+          />
+        ) : (
+          <img 
+            src={defaultPicLight} 
+            alt="" 
+            aria-hidden="true" 
+            loading="lazy" 
+            onError={(e) => e.currentTarget.style.display = 'none'}
+          />
+        )
+      }
     </Container>
   );
 }

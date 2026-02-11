@@ -31,7 +31,6 @@ export const Container = styled.div<ContainerProps>`
   border-radius: 50%;
   overflow: hidden;
   flex-shrink: 0;
-  background-color: ${({ theme }) => theme.COLORS.SURFACE || '#f0f0f0'};
 
   ${({ $size }) => sizeVariations[$size]};
 
