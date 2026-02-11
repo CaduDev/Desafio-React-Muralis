@@ -66,8 +66,7 @@ export function Dashboard({
         <UserContent $isCollapsed={isCollapsed}>
           <div>
             <Avatar
-              // uri={user.avatar && user.avatar.thumb ? user.avatar.thumb : ''}
-              uri=''
+              uri={user.avatar && user.avatar.thumb ? user.avatar.thumb : ''}
               size='automatic'
             />
           </div>
